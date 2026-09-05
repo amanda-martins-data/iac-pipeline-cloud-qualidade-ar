@@ -1,0 +1,17 @@
+# Copie para terraform.tfvars e ajuste antes de rodar `terraform apply`.
+# terraform.tfvars está no .gitignore — nunca commitar valores reais aqui.
+
+aws_region = "us-east-1"
+
+# ARN de uma Lambda Layer pública com psycopg2-binary para Python 3.12,
+# na MESMA região definida acima. Ver README > "Como rodar" para como
+# encontrar o ARN correto (ex.: via https://github.com/keithrozario/Klayers).
+psycopg2_layer_arn = "arn:aws:lambda:us-east-1:000000000000:layer:psycopg2-py312:1"
+
+# Deixe true até configurar uma API key real da OpenAQ.
+openaq_use_synthetic = true
+# openaq_api_key      = "sua_chave_aqui"
+
+db_instance_class       = "db.t4g.micro"
+db_allocated_storage_gb = 20
+schedule_expression     = "rate(1 day)"
