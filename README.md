@@ -1,5 +1,7 @@
 # Infrastructure as Code — Pipeline de Dados na Nuvem
 
+[![CI](https://github.com/amanda-martins-data/iac-pipeline-cloud-qualidade-ar/actions/workflows/ci.yml/badge.svg)](https://github.com/amanda-martins-data/iac-pipeline-cloud-qualidade-ar/actions/workflows/ci.yml)
+
 Provisiona, via Terraform, a mesma lógica de negócio dos Projetos
 01-03 (extração de qualidade do ar + agregação + classificação de AQI)
 como uma arquitetura serverless na AWS: **S3** (data lake) + **Lambda**
